@@ -1,3 +1,4 @@
+//方法一
 function camel(str){
 	var arr=str.split('-');
 	for (var i = 0; i < arr.length; i++) {
@@ -8,6 +9,7 @@ function camel(str){
  console.log(camel('leuo-fei-and'));
 
 
+//方法二
  function camel(str){
  	var arr=str.match(/[\w-]/g);//返回一个数组，该数组的元素是字符串中所有正则表达式的匹配项。
  	for (var i = 0; i < arr.length; i++) {
